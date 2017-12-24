@@ -41,6 +41,11 @@ public class CacheConfiguration {
             cm.createCache(br.com.hamburgueria.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(br.com.hamburgueria.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(br.com.hamburgueria.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(br.com.hamburgueria.domain.Ingrediente.class.getName(), jcacheConfiguration);
+            cm.createCache(br.com.hamburgueria.domain.Lanche.class.getName(), jcacheConfiguration);
+            cm.createCache(br.com.hamburgueria.domain.Lanche.class.getName() + ".items", jcacheConfiguration);
+            cm.createCache(br.com.hamburgueria.domain.Item.class.getName(), jcacheConfiguration);
+            cm.createCache(br.com.hamburgueria.domain.Item.class.getName() + ".ingredientes", jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

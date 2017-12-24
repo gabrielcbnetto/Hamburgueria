@@ -1,0 +1,22 @@
+{
+    "hamburgueriaApp": {
+        "lanche" : {
+            "home": {
+                "title": "Lanches",
+                "createLabel": "Create a new Lanche",
+                "createOrEditLabel": "Create or edit a Lanche"
+            },
+            "created": "A new Lanche is created with identifier {{ param }}",
+            "updated": "A Lanche is updated with identifier {{ param }}",
+            "deleted": "A Lanche is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Lanche {{ id }}?"
+            },
+            "detail": {
+                "title": "Lanche"
+            },
+            "nome": "Nome",
+            "item": "Item"
+        }
+    }
+}

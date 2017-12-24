@@ -1,0 +1,23 @@
+{
+    "hamburgueriaApp": {
+        "ingrediente" : {
+            "home": {
+                "title": "Ingredientes",
+                "createLabel": "Criar novo Ingrediente",
+                "createOrEditLabel": "Criar ou editar Ingrediente"
+            },
+            "created": "Um novo Ingrediente foi criado com o identificador {{ param }}",
+            "updated": "Um Ingrediente foi atualizado com o identificador {{ param }}",
+            "deleted": "Um Ingrediente foi deletado com o identificador {{ param }}",
+            "delete": {
+                "question": "Tem certeza de que deseja excluir Ingrediente {{ id }}?"
+            },
+            "detail": {
+                "title": "Ingrediente"
+            },
+            "nome": "Nome",
+            "valor": "Valor",
+            "item": "Item"
+        }
+    }
+}

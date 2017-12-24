@@ -1,0 +1,24 @@
+entity Ingrediente {
+	nome String required,
+	valor Double required
+}
+
+entity Lanche {
+	nome String required,
+}
+
+entity Item {
+ quantidade Integer,
+}
+
+relationship OneToMany {
+    Lanche{item(quantidade)} to Item{lanche}
+}
+
+relationship OneToMany {
+    Item{ingrediente(nome)} to Ingrediente{item}
+}
+
+dto Ingrediente, Lanche, Item with mapstruct
+
+paginate Ingrediente, Lanche with infinite-scroll

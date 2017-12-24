@@ -1,0 +1,36 @@
+
+<div *ngIf="ingrediente">
+    <h2><span jhiTranslate="hamburgueriaApp.ingrediente.detail.title">Ingrediente</span> {{ingrediente.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="hamburgueriaApp.ingrediente.nome">Nome</span></dt>
+        <dd>
+            <span>{{ingrediente.nome}}</span>
+        </dd>
+        <dt><span jhiTranslate="hamburgueriaApp.ingrediente.valor">Valor</span></dt>
+        <dd>
+            <span>{{ingrediente.valor}}</span>
+        </dd>
+        <dt><span jhiTranslate="hamburgueriaApp.ingrediente.item">Item</span></dt>
+        <dd>
+            <div *ngIf="ingrediente.itemId">
+                <a [routerLink]="['/item', ingrediente.itemId]">{{ingrediente.itemId}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'ingrediente/'+ ingrediente.id + '/edit'} }]"
+            replaceUrl="true"
+            queryParamsHandling="merge"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

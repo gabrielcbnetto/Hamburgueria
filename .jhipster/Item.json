@@ -1,0 +1,29 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "ingrediente",
+            "otherEntityName": "ingrediente",
+            "otherEntityRelationshipName": "item"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "lanche",
+            "otherEntityName": "lanche",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "quantidade",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20171224172603",
+    "entityTableName": "item",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

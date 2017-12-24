@@ -1,0 +1,23 @@
+{
+    "hamburgueriaApp": {
+        "item" : {
+            "home": {
+                "title": "Items",
+                "createLabel": "Criar novo Item",
+                "createOrEditLabel": "Criar ou editar Item"
+            },
+            "created": "Um novo Item foi criado com o identificador {{ param }}",
+            "updated": "Um Item foi atualizado com o identificador {{ param }}",
+            "deleted": "Um Item foi deletado com o identificador {{ param }}",
+            "delete": {
+                "question": "Tem certeza de que deseja excluir Item {{ id }}?"
+            },
+            "detail": {
+                "title": "Item"
+            },
+            "quantidade": "Quantidade",
+            "ingrediente": "Ingrediente",
+            "lanche": "Lanche"
+        }
+    }
+}
